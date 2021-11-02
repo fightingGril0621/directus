@@ -1,0 +1,244 @@
+---
+## Be aware:
+#Due to the way this is imported, JavaScript reserved words, including "delete", "private",
+#"void", etc are stripped out. See
+#https://github.com/rollup/plugins/blob/8748b8cd3bbab3c5ac6190556930219f19060e63/packages/pluginutils/src/makeLegalIdentifier.ts#L4
+#and
+#https://github.com/rollup/plugins/blob/8748b8cd3bbab3c5ac6190556930219f19060e63/packages/yaml/src/index.js#L45
+#Illegal words:
+#'break', 'case', 'class', 'catch', 'const', 'continue', 'debugger', 'default', 'delete', 'do',
+#'else', 'export', 'extends', 'finally', 'for', 'function', 'if', 'import', 'in', 'instanceof',
+#'let', 'new', 'return', 'super', 'switch', 'this', 'throw', 'try', 'typeof', 'var', 'void',
+#'while', 'with', 'yield', 'enum', 'await', 'implements', 'package', 'protected', 'static',
+#'interface', 'private', 'public', 'arguments', 'Infinity', 'NaN', 'undefined', 'null', 'true',
+#'false', 'eval', 'uneval', 'isFinite', 'isNaN', 'parseFloat', 'parseInt', 'decodeURI',
+#'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape', 'unescape', 'Object',
+#'Function', 'Boolean', 'Symbol', 'Error', 'EvalError', 'InternalError', 'RangeError',
+#'ReferenceError', 'SyntaxError', 'TypeError', 'URIError', 'Number', 'Math', 'Date', 'String',
+#'RegExp', 'Array', 'Int8Array', 'Uint8Array', 'Uint8ClampedArray', 'Int16Array', 'Uint16Array',
+#'Int32Array', 'Uint32Array', 'Float32Array', 'Float64Array', 'Map', 'Set', 'WeakMap', 'WeakSet',
+#'SIMD', 'ArrayBuffer', 'DataView', 'JSON', 'Promise', 'Generator', 'GeneratorFunction', 'Reflect',
+#'Proxy', 'Intl'
+avatar: Avatar
+default_provider: Implicit
+published: Publicat
+draft: Ciornă
+archived: Arhivat
+modules: Module
+module_bar: Bară module
+edit_field: Editează câmp
+conditions: Condiții
+maps: Hărţi
+item_creation: Creare articol
+item_revision: Revizuire element
+enter_a_name: Introduceți un nume...
+duplicate_field: Duplicare câmp
+half_width: Jumătate de lăţime
+full_width: Lăţime totală
+group: Grup
+and: Şi
+or: Sau
+fill_width: Umple lăţime
+field_name_translations: Traducerile numelui câmpului
+enter_password_to_enable_tfa: Introduceți parola pentru a activa autentificarea în doi paşi
+add_field: Adaugă câmp
+role_name: Nume de rol
+branch: Ramură
+leaf: Frunză
+edit_collection: Editează colecția
+exclusive: Exclusiv
+children: Copii
+db_only_click_to_configure: 'Doar baza de date: apăsați pentru configurare'
+show_archived_items: Arată elementele arhivate
+edited: Valoare editată
+required: Necesar
+required_for_app_access: Necesar pentru acces aplicaţie
+requires_value: Necesită valoare
+create_preset: Creează presetare
+create_role: Creează Rol
+create_user: Creează utilizator
+create_webhook: Creează Webhook
+invite_users: Invită utilizatori
+invite: Invită
+emails: E-mailuri
+connection_excellent: Conexiune excelentă
+connection_good: Conexiune bună
+connection_fair: Conexiune rezonabilă
+connection_poor: Conexiune slabă
+rename_folder: Redenumeşte folderul
+delete_folder: Şterge folderul
+reset_bookmark: Resetează semnul de carte
+rename_bookmark: Redenumeşte semnul de carte
+update_bookmark: Actualizează semnul de carte
+delete_bookmark: Șterge semn de carte
+delete_bookmark_copy: >-
+  Sunteţi sigur că doriţi să ştergeţi semnul de carte "{bookmark}"? Această acţiune nu poate fi modificată ulterior.
+logoutReason:
+  SIGN_OUT: Deconectat
+  SESSION_EXPIRED: Sesiunea a expirat
+public_description: Controlează ce date API sunt disponibile fără autentificare.
+not_allowed: Nu este permis
+directus_version: Versiune Directus
+node_version: Versiune Node
+node_uptime: Timp de activitate Node
+os_type: Tipul SO
+os_version: Versiunea SO
+os_uptime: Timpul de activitate al SO
+os_totalmem: Memoria SO
+archive: Arhivează
+archive_confirm: Sunteţi sigur că doriţi să arhivaţi acest element?
+archive_confirm_count: >-
+  Niciun element selectat | Sunteţi sigur că doriţi să arhivaţi acest element? | Sunteţi sigur că doriţi să arhivaţi aceste {count} elemente?
+unarchive: Dezarhivare
+unarchive_confirm: Sunteţi sigur că doriţi să dezarhivaţi acest element?
+nested_files_folders_will_be_moved: Fişierele şi folderele suprapuse vor fi mutate cu un nivel mai sus.
+create_field: Creează Câmp
+auto_generate: Generare automată
+add_note: Adaugă o notă ajutătoare pentru utilizatori...
+default_value: Valoare implicită
+clear_value: Șterge valoarea
+title: Titlu
+checksum: Sumă de control
+owner: Proprietar
+download: Descărcați
+created_by: Creat De
+created_on: Creat Pe
+comments: Comentarii
+create_collection: Creează Colecție
+users: Utilizatori
+activity: Activitate
+action: Acţiune
+ip_address: Adresă IP
+user_agent: User Agent
+duration: Durată
+status: Stare
+bookmarks: Semne de carte
+back: Înapoi
+operators:
+  gt: Mai mare ca
+  gte: Mai mare sau egal cu
+  contains: Conține
+role: Rol
+create: Creează
+width: Lățime
+height: Înălţime
+wysiwyg_options:
+  table: Tabel
+choices: Opțiuni
+deselect: Deselectaţi
+editing_in_batch: 'Editare lot de {count} elemente'
+discard_changes: Renunță la modificări
+add_new: Adaugare intrare nouă
+all: Tot
+batch_delete_confirm: >-
+  Nu au fost selectate articole | Sigur doriți să ștergeți acest articol? Această acțiune nu poate fi anulată. | Sigur doriți să ștergeți aceste {count} elemente? Această acțiune nu poate fi anulată.
+cancel: Anulează
+collection: Colecție
+collections: Colecții
+fields:
+  directus_activity:
+    item: Cheia primară a elementului
+    action: Acţiune
+    collection: Colecție
+    timestamp: Acțiune pe
+    user: Acțiune de
+    comment: Comentariu
+    user_agent: User Agent
+    ip: Adresă IP
+  directus_collections:
+    collection: Colecție
+    icon: Iconiță
+    hidden: Ascuns
+  directus_files:
+    title: Titlu
+    description: Descriere
+    tags: Etichete
+    location: Locație
+    metadata: Metadate
+    filesize: Dimensiune fişier
+    created_on: Creat Pe
+    created_by: Creat De
+    embed: Încorporați
+    uploaded_by: Încărcat de
+    width: Lățime
+    uploaded_on: Încărcat pe
+    height: Înălţime
+    duration: Durată
+  directus_users:
+    first_name: Prenume
+    last_name: Nume
+    email: Email
+    password: Parolă
+    avatar: Avatar
+    location: Locație
+    title: Titlu
+    description: Descriere
+    tags: Etichete
+    theme: Temă
+    tfa_secret: Autentificare în doi pași
+    status: Stare
+    role: Rol
+  directus_fields:
+    hidden: Ascuns
+    translation: Traducerile numelui câmpului
+  directus_roles:
+    name: Nume de rol
+    description: Descriere
+  directus_webhooks:
+    status: Stare
+field_options:
+  directus_activity:
+    create: Creează
+  directus_collections:
+    archive_divider: Arhivează
+  directus_roles:
+    fields:
+      icon_name: Iconiță
+    collections_name: Colecții
+  directus_webhooks:
+    actions_create: Creează
+comment: Comentariu
+delete_field_are_you_sure: >-
+  Sunteţi sigur că doriţi să ştergeţi câmpul "{field}"? Această acţiune nu poate fi modificată ulterior.
+description: Descriere
+done: Efectuat
+duplicate: Duplicare
+email: Email
+embed: Încorporați
+field: Câmp | Câmpuri
+hidden: Ascuns
+icon: Iconiță
+info: Info
+password: Parolă
+interfaces:
+  filter:
+    all: Tot
+  system-collection:
+    collection: Colecție
+  system-collections:
+    collections: Colecții
+  files:
+    files: Fişiere
+  select-icon:
+    icon: Iconiță
+  tags:
+    tags: Etichete
+displays:
+  collection:
+    collection: Colecție
+  icon:
+    icon: Iconiță
+  user:
+    avatar: Avatar
+    both: Ambele
+layouts:
+  cards:
+    cards: Carduri
+    image_source: Sursa Imaginii
+    title: Titlu
+    subtitle: Subtitlu
+  tabular:
+    tabular: Tabel
+    comfortable: Confortabil
+    compact: Compact
+    cozy: Comod

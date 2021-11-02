@@ -1,0 +1,454 @@
+---
+## Be aware:
+#Due to the way this is imported, JavaScript reserved words, including "delete", "private",
+#"void", etc are stripped out. See
+#https://github.com/rollup/plugins/blob/8748b8cd3bbab3c5ac6190556930219f19060e63/packages/pluginutils/src/makeLegalIdentifier.ts#L4
+#and
+#https://github.com/rollup/plugins/blob/8748b8cd3bbab3c5ac6190556930219f19060e63/packages/yaml/src/index.js#L45
+#Illegal words:
+#'break', 'case', 'class', 'catch', 'const', 'continue', 'debugger', 'default', 'delete', 'do',
+#'else', 'export', 'extends', 'finally', 'for', 'function', 'if', 'import', 'in', 'instanceof',
+#'let', 'new', 'return', 'super', 'switch', 'this', 'throw', 'try', 'typeof', 'var', 'void',
+#'while', 'with', 'yield', 'enum', 'await', 'implements', 'package', 'protected', 'static',
+#'interface', 'private', 'public', 'arguments', 'Infinity', 'NaN', 'undefined', 'null', 'true',
+#'false', 'eval', 'uneval', 'isFinite', 'isNaN', 'parseFloat', 'parseInt', 'decodeURI',
+#'decodeURIComponent', 'encodeURI', 'encodeURIComponent', 'escape', 'unescape', 'Object',
+#'Function', 'Boolean', 'Symbol', 'Error', 'EvalError', 'InternalError', 'RangeError',
+#'ReferenceError', 'SyntaxError', 'TypeError', 'URIError', 'Number', 'Math', 'Date', 'String',
+#'RegExp', 'Array', 'Int8Array', 'Uint8Array', 'Uint8ClampedArray', 'Int16Array', 'Uint16Array',
+#'Int32Array', 'Uint32Array', 'Float32Array', 'Float64Array', 'Map', 'Set', 'WeakMap', 'WeakSet',
+#'SIMD', 'ArrayBuffer', 'DataView', 'JSON', 'Promise', 'Generator', 'GeneratorFunction', 'Reflect',
+#'Proxy', 'Intl'
+avatar: Аватар
+default_provider: За замовчуванням
+published: Опубліковано
+draft: Чернетка
+archived: Архівовано
+modules: Модулі
+module_bar: Панель модулів
+tile_size: Розмір плитки
+edit_field: Редагувати поле
+conditions: Умови
+maps: Мапи
+item_creation: Створення елемента
+item_revision: Перегляд об'єкта
+enter_a_name: Вкажіть назву...
+duplicate_field: Дублювати поле
+half_width: Ширина ряду на половину
+full_width: Повна ширина
+group: Група
+and: Й
+or: Або
+fill_width: Ширина заповнення
+field_name_translations: Переклад назви поля
+enter_password_to_enable_tfa: Введіть свій пароль, щоб увімкнути двофакторну аутентифікацію
+add_field: Додати поле
+role_name: Назва ролі
+branch: Гілка
+leaf: Відгалуження
+indeterminate: Не вдалось визначити
+edit_collection: Редагувати збірку
+exclusive: Винятково
+children: Дочірні елементи
+show_archived_items: Показати архівні елементи
+edited: Значення відредаговано
+required: Обов'язкове
+required_for_app_access: Необхідно для доступу в додаток
+requires_value: Потребує значення
+create_preset: Створити шаблон
+create_panel: Створити панель
+create_role: Створити роль
+create_user: Новий користувач
+delete_panel: Видалити панель
+create_webhook: Створити вебхук
+invite_users: Запросити друзів
+invite: Запросити
+email_already_invited: Користувача "{email}" вже запрошено
+emails: Електронні адреси
+connection_excellent: Ідеальне з'єднання
+connection_good: Хороше з'єднання
+connection_fair: Нормальне з'єднання
+connection_poor: Слабке з'єднання
+primary: Стандартно
+rename_folder: Перейменувати папку
+delete_folder: Видалити папку
+prefix: Префікс
+suffix: Суфікс
+reset_bookmark: Скинути закладку
+rename_bookmark: Перейменувати закладку
+update_bookmark: Оновити закладку
+delete_bookmark: Видалити закладку
+delete_bookmark_copy: >-
+  Ви впевнені, що хочете видалити закладку "{bookmark}"? Цю дію не можливо буде скасувати.
+logoutReason:
+  SIGN_OUT: Виконано вихід
+  SESSION_EXPIRED: Час сеансу минув
+public_label: Загальнодоступний
+public_description: Контролює, які дані API є доступними без входу в особистий кабінет.
+not_allowed: Заборонено
+directus_version: Версія Directus
+node_version: Версія Node
+node_uptime: Час роботи Node
+os_type: Тип ОС
+os_version: Версія ОС
+os_uptime: Час роботи ОС
+os_totalmem: Пам'ять операційної системи
+archive: Архів
+archive_confirm: Ви впевнені, що хочете додати цей файл до архіву?
+archive_confirm_count: >-
+  Жодного елементу не обрано | Ви впевнені, що хочете додати цей файл до архіву? | Ви впевнені, що хочете додати ці {count} файлів до архіву?
+reset_system_permissions_to: 'Скинути налаштування до:'
+reset_system_permissions_copy: Ця дія перезапише будь-які користувацькі дозволи, які ви могли задати до системних колекцій. Ви впевнені?
+the_following_are_minimum_permissions: Нижче наведені дозволи, необхідні при включеному доступі до додатка. Їх можна розширити, але не скоротити.
+app_access_minimum: Мінімальний доступ до додатку
+recommended_defaults: Рекомендовані значення за замовчуванням
+unarchive: Розархівувати
+unarchive_confirm: Ви впевнені, що хочете розархівувати цей елемент?
+nested_files_folders_will_be_moved: Вкладені файли і папки будуть переміщені на один рівень вище.
+unknown_validation_errors: 'Виявлено помилки валідації для наступних прихованих полів:'
+validationError:
+  eq: Значення повинно бути {valid}
+  neq: Значення не може бути {invalid}
+  in: Значення повинно бути одним з {valid}
+  nin: Значення не може бути одним з {invalid}
+  contains: Значення повинно містити {substring}
+  ncontains: Значення не може містити {substring}
+  gt: Значення має бути більше {valid}
+  gte: Значення має бути більше або дорівнювати {valid}
+  lt: Значення має бути менше {valid}
+  lte: Значення має бути більше або дорівнювати {valid}
+  empty: Значення повинно бути порожнім
+  nempty: Значення не може бути порожнім
+  null: Значення повинне бути null
+  nnull: Значення не може бути null
+  required: Значення є обов'язковим
+  unique: Значення повинно бути унікальним
+  regex: Значення має некоректний формат
+all_access: Повний доступ
+no_access: Немає доступу
+nullable: Дозволити NULL значення
+allow_null_value: Дозволити NULL значення
+allow_multiple: Дозволити кілька
+allow_multiple_to_be_open: Можна відкрити декілька
+field_standard: Стандартний
+field_presentation: Подання та Аліаси
+field_file: Один файл
+field_files: Кілька файлів
+field_m2o: Зв’язок M2O
+field_m2a: Зв’язок M2A
+field_o2m: Зв’язок 02M
+field_m2m: Зв’язок M2M
+field_translations: Переклади
+field_group: Група полів
+item_permissions: Дозволи елемента
+field_permissions: Дозволи Поля
+field_validation: Валідація Поля
+field_presets: Пресети Полів
+delete_field: Видалити поле
+language: Мова
+global: Глобальний
+camera: Камера
+show_zero: Показати нуль
+sum: Сума
+create_field: Створення поля
+hidden_on_detail: Приховано на деталі
+date: Дата
+decimal: Десятки
+text: Текст
+time: Час
+auto_generate: Автоматично згенерувати
+add_note: Додайте інформативну нотатку для користувачів...
+default_value: Значення за замовчуванням
+next: Уперед
+note: Примітка
+length: Довжина
+readonly: Тільки читання
+unique: Унікальне
+primary_key: Первинний ключ
+clear_value: Очистити значення
+reset_to_default: Відновити налаштування за умовчанням
+undo_changes: Відмінити зміни
+notifications: Сповіщення
+page_not_found: Сторінку не знайдено
+page_not_found_body: Здається, сторінка яку ви шукаєте, не існує.
+title: Заголовок
+revision_delta_deleted: Видалено
+leave_comment: Залишити коментар...
+this_collection: Ця колекція
+related_collection: Пов'язана колекція
+format: Формат
+submit: Підтвердити
+months:
+  january: Січень
+  february: Лютий
+  march: Березень
+  april: Квітень
+  may: Травень
+  june: Червень
+  july: Липень
+  august: Серпень
+  september: Вересень
+  october: Жовтень
+  november: Листопад
+  december: Грудень
+size: Розмір
+checksum: Контрольна сума
+owner: Власник
+download: Завантажити
+name: Назва
+created_by: Автор
+created_on: Створено
+save_and_stay: Зберегти і Залишитись
+save_as_copy: Зберегти копію
+comments: Коментарі
+request_feature: Запит на нову функцію
+item_count: 'Немає елементів | Один елемент | {count} елементів'
+csv: CSV
+create_collection: Створити колекцію
+users: Користувачі
+activity: Активність
+action: Дія
+ip_address: IP адреса
+user_agent: Ідентифікатор браузера
+webhooks: Вебхуки
+field_width: Ширина поля
+user_directory: Директорія користувачів
+duration: Тривалість
+modified_on: Час зміни
+status: Статус
+remove: Видалити
+errors:
+  ROUTE_NOT_FOUND: Не знайдено
+  NOT_NULL_VIOLATION: Значення не може бути null
+create_bookmark: Створити закладку
+bookmarks: Закладки
+back: Назад
+placeholder: Заповнювач
+icon_left: Значок ліворуч
+icon_right: Значок праворуч
+font: Шрифт
+monospace: Моноширинний шрифт
+divider: Розділювач
+color: Колір
+operators:
+  lt: Менше ніж
+  gt: Більше ніж
+  lte: Менше ніж або дорівнює
+  gte: Більше ніж або дорівнює
+  contains: Містить
+  ncontains: Не містить
+  empty: Порожньо
+loading: Завантаження...
+value_unique: Значення повинно бути унікальним
+no_results: Нічого не знайдено
+role: Роль
+user: Користувач
+create: Створити
+on_update: При оновленні
+read: Прочитайте
+update: Оновити
+select_fields: Обрати поля
+width: Ширина
+height: Висота
+wysiwyg_options:
+  codeblock: Код
+  remove: Видалити
+  table: Таблиця
+dropdown: Випадаюче меню
+choices: Варіанти
+deselect: Зняти виділення
+editing_in_batch: 'Пакетне редагування {count} елементів'
+settings_permissions: Ролі і Дозволи
+settings_project: Налаштування проекту
+settings_webhooks: Вебхуки
+unsaved_changes: Незбережені зміни
+unsaved_changes_copy: Ви впевнені, що хочете залишити цю сторінку?
+discard_changes: Скасувати зміни
+keep_editing: Продовжити редагування
+add_new: Створити
+all: Все
+batch_delete_confirm: >-
+  Жодних елементів не вибрано | Ви впевнені, що хочете видалити цей елемент? Цю дію не можна скасувати. | Ви впевнені, що ви хочете видалити ці {count} елементи? Цю дію неможливо скасувати.
+cancel: Скасувати
+collection: Колекція
+collections: Колекції
+fields:
+  directus_activity:
+    item: Первинний ключ елемента
+    action: Дія
+    collection: Колекція
+    timestamp: Час події
+    user: Дія від
+    comment: Коментар
+    user_agent: Ідентифікатор браузера
+    ip: IP адреса
+  directus_collections:
+    collection: Колекція
+    icon: Іконка
+    note: Примітка
+    color: Колір
+    hidden: Приховано
+  directus_files:
+    title: Заголовок
+    description: Опис
+    tags: Теги
+    location: Розташування
+    metadata: Метадані
+    filesize: Розмір файлу
+    modified_on: Час зміни
+    created_on: Створено
+    created_by: Автор
+    embed: Вбудувати
+    uploaded_by: Завантажено
+    width: Ширина
+    uploaded_on: Завантажено
+    height: Висота
+    duration: Тривалість
+  directus_users:
+    first_name: Ім'я
+    last_name: Прізвище
+    email: Email
+    password: Пароль
+    avatar: Аватар
+    location: Розташування
+    title: Заголовок
+    description: Опис
+    tags: Теги
+    language: Мова
+    theme: Тема
+    tfa_secret: Двофакторна автентифікація
+    status: Статус
+    role: Роль
+  directus_settings:
+    project_name: Назва проекту
+  directus_fields:
+    note: Примітка
+    hidden: Приховано
+    translation: Переклад назви поля
+    display_template: Шаблон
+  directus_roles:
+    name: Назва ролі
+    description: Опис
+  directus_webhooks:
+    name: Назва
+    status: Статус
+field_options:
+  directus_activity:
+    create: Створити
+    update: Оновити
+  directus_collections:
+    language: Мова
+    translation: Переклад
+    archive_divider: Архів
+  directus_roles:
+    fields:
+      icon_name: Іконка
+      name_name: Назва
+    collections_name: Колекції
+  directus_webhooks:
+    actions_create: Створити
+    actions_update: Оновити
+comment: Коментар
+delete_field_are_you_sure: >-
+  Ви впевнені, що хочете видалити поле "{field}"? Цю дію не можливо скасувати.
+description: Опис
+done: Готово
+duplicate: Дублювати
+limit: Обмеження
+email: Email
+embed: Вбудувати
+field: Поле | Поля
+file: Файл
+file_library: Бібліотека файлів
+forgot_password: Забули пароль
+hidden: Приховано
+icon: Іконка
+info: Інформація
+junction_collection: Збірна колекція
+latency: Затримка
+login: Вхід
+my_activity: Активність
+not_authenticated: Не автентифіковано
+options: Параметри
+otp: Одноразовий пароль
+password: Пароль
+permissions: Права
+relationship: Відносини
+reset: Скинути
+reset_password: Скинути пароль
+revert: Повернути
+save: Зберегти
+schema: Схема
+search: Пошук
+select_existing: Вибрати існуючі
+select_interface: Виберіть інтерфейс
+settings: Налаштування
+sign_in: Вхід
+sign_out: Вихід
+sign_out_confirm: Ви справді бажаєте вийти?
+something_went_wrong: Щось пішло не так.
+sort_direction: Напрямок сортування
+template: Шаблон
+translation: Переклад
+value: Значення
+interfaces:
+  filter:
+    all: Все
+  presentation-links:
+    primary: Стандартно
+  input-code:
+    code: Код
+  system-collection:
+    collection: Колекція
+  system-collections:
+    collections: Колекції
+  select-color:
+    color: Колір
+  datetime:
+    datetime: Дата й час
+  presentation-divider:
+    divider: Розділювач
+  file:
+    file: Файл
+  files:
+    files: Файли
+  select-icon:
+    icon: Іконка
+  tags:
+    tags: Теги
+  user:
+    user: Користувач
+    modes:
+      dropdown: Випадаюче меню
+displays:
+  collection:
+    collection: Колекція
+  color:
+    color: Колір
+  datetime:
+    datetime: Дата й час
+    format: Формат
+  file:
+    file: Файл
+  filesize:
+    filesize: Розмір файлу
+  icon:
+    icon: Іконка
+  user:
+    user: Користувач
+    avatar: Аватар
+    name: Назва
+    both: Обидва
+layouts:
+  cards:
+    cards: Картки
+    image_source: Джерело зображення
+    title: Заголовок
+    subtitle: Підзаголовок
+  tabular:
+    tabular: Таблиця
+    fields: Поля
+    spacing: Відступ
+    comfortable: Комфортна
+    compact: Компактна
+    cozy: Зручна

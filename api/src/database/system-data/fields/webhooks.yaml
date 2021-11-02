@@ -1,0 +1,124 @@
+table: directus_webhooks
+
+fields:
+  - field: id
+    hidden: true
+
+  - field: name
+    interface: input
+    options:
+      iconRight: title
+    width: full
+
+  - field: method
+    interface: select-dropdown
+    display: labels
+    display_options:
+      defaultForeground: 'var(--foreground-normal)'
+      defaultBackground: 'var(--background-normal-alt)'
+      choices:
+        - value: POST
+          foreground: 'var(--primary)'
+          background: 'var(--primary-25)'
+        - value: GET
+          foreground: 'var(--secondary)'
+          background: 'var(--secondary-25)'
+      format: false
+    options:
+      choices:
+        - GET
+        - POST
+    width: half
+
+  - field: url
+    interface: input
+    options:
+      iconRight: link
+    width: half
+
+  - field: status
+    interface: select-dropdown
+    display: labels
+    display_options:
+      defaultForeground: 'var(--foreground-normal)'
+      defaultBackground: 'var(--background-normal-alt)'
+      showAsDot: true
+      choices:
+        - text: $t:active
+          value: active
+          foreground: 'var(--primary-10)'
+          background: 'var(--primary)'
+        - text: $t:inactive
+          value: inactive
+          foreground: 'var(--foreground-normal)'
+          background: 'var(--background-normal-alt)'
+    options:
+      choices:
+        - text: $t:active
+          value: active
+        - text: $t:inactive
+          value: inactive
+    width: half
+
+  - field: data
+    interface: boolean
+    options:
+      label: $t:fields.directus_webhooks.data_label
+    special: boolean
+    width: half
+    display: boolean
+
+  - field: triggers_divider
+    interface: presentation-divider
+    options:
+      icon: api
+      title: $t:fields.directus_webhooks.triggers
+    special:
+      - alias
+      - no-data
+    width: full
+
+  - field: actions
+    interface: select-multiple-checkbox
+    options:
+      choices:
+        - text: $t:create
+          value: create
+        - text: $t:update
+          value: update
+        - text: $t:delete_label
+          value: delete
+    special: csv
+    width: full
+    display: labels
+    display_options:
+      defaultForeground: 'var(--foreground-normal)'
+      defaultBackground: 'var(--background-normal-alt)'
+      choices:
+        - text: $t:create
+          value: create
+          foreground: 'var(--primary)'
+          background: 'var(--primary-25)'
+        - text: $t:update
+          value: update
+          foreground: 'var(--blue)'
+          background: 'var(--blue-25)'
+        - text: $t:delete_label
+          value: delete
+          foreground: 'var(--danger)'
+          background: 'var(--danger-25)'
+        - text: $t:login
+          value: login
+          foreground: 'var(--purple)'
+          background: 'var(--purple-25)'
+
+  - field: collections
+    interface: system-collections
+    special: csv
+    width: full
+    display: labels
+    display_options:
+      defaultForeground: 'var(--foreground-normal)'
+      defaultBackground: 'var(--background-normal-alt)'
+      choices: null
+      format: false
